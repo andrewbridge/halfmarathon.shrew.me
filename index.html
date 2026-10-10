@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andrew's Royal Parks Half 2026</title>
+  <meta name="description" content="I'm running the Royal Parks Half Marathon 2026 for charity. Sponsor me, or grab the soundtrack.">
+  <meta property="og:title" content="Andrew's Royal Parks Half 2026">
+  <meta property="og:description" content="I'm running the Royal Parks Half Marathon 2026 for charity. Sponsor me, or grab the soundtrack.">
+  <meta property="og:url" content="https://halfmarathon.shrew.me/">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏃</text></svg>">
+  <style>
+    :root {
+      --bg: #f6f4ee;
+      --fg: #1c2321;
+      --muted: #5b6662;
+      --accent: #2f6b3f;
+      --accent-fg: #fff;
+      --card: #fff;
+      --border: #dcd8cc;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141917;
+        --fg: #ecefe9;
+        --muted: #a3ada8;
+        --accent: #6fbf82;
+        --accent-fg: #0f1512;
+        --card: #1c2320;
+        --border: #2e3833;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 2rem 1rem;
+      background: var(--bg);
+      color: var(--fg);
+      font: 1.0625rem/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { width: 100%; max-width: 32rem; text-align: center; }
+    .emoji { font-size: 3rem; line-height: 1; margin: 0 0 .5rem; }
+    h1 { font-size: clamp(1.75rem, 6vw, 2.25rem); line-height: 1.15; margin: 0 0 .75rem; }
+    p { color: var(--muted); margin: 0 0 2rem; }
+    .links { display: grid; gap: .875rem; }
+    a.btn {
+      display: block;
+      padding: 1rem 1.25rem;
+      border-radius: .75rem;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--fg);
+      transition: transform .1s ease;
+    }
+    a.btn small { display: block; font-weight: 400; color: var(--muted); font-size: .875rem; }
+    a.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-fg); }
+    a.btn.primary small { color: inherit; opacity: .85; }
+    a.btn:hover { transform: translateY(-2px); }
+    a.btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    footer { margin-top: 2.5rem; font-size: .875rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="emoji" aria-hidden="true">🏃‍♂️🌳</div>
+    <h1>I'm running the Royal Parks Half 2026</h1>
+    <p>13.1 miles through London's Royal Parks, all for charity. If you can spare anything, it'd mean a lot.</p>
+    <div class="links">
+      <a class="btn primary" href="https://www.justgiving.com/page/andrew-bridge-royal-parks-2026?utm_medium=FR&amp;utm_source=CL">
+        Sponsor me on JustGiving
+        <small>Every pound helps</small>
+      </a>
+      <a class="btn" href="https://shrewman.bandcamp.com/album/half-marathon">
+        Listen to the soundtrack
+        <small>The tracks from my social posts, on Bandcamp</small>
+      </a>
+    </div>
+    <footer>Thank you! — Andrew</footer>
+  </main>
+</body>
+</html>
